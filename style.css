@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(0, 0, 125);
+    color:aqua;
+    font-size: larger;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+header {
+    background-color: rgb(0, 0, 55);
+    padding: 20px 40px;
+    align-items: center;
+}
+
+header h1 {
+    grid-column: span 6;
+}
+
+header nav {
+    grid-column: 7/ span 6;
+    justify-self: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(0, 89, 254);
+    margin-left: 20px;
+    font-size: large;
+}
+
+main {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+main img {
+    grid-column: span 6;
+    width: 100%;
+}
+
+main .welcome {
+    grid-column: 7 / span 6;
+    text-align: center;
+    font-size: larger;
+}
+
+main article {
+    background-color: blueviolet;
+    padding: 20px 40px;
+    color: white;
+    grid-column: 7/ span 6;
+    position: relative; 
+	top: 30px;
+	right: 300px;
+}
+
+main article a {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+footer {
+    background-color: rgb(0, 0, 55);
+    padding: 20px 40px;
+}
+
+footer nav {
+    grid-column: 7/ span 6;
+    justify-self: right;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: rgb(0, 89, 254);
+    margin-left: 20px;
+}
